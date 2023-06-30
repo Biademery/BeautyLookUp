@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Beauty Look up</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6075/6075201.png">
+</head>
+
+<body>
+  <header>
+    <h1>Beauty Look up</h1>
+  </header>
+  <main>
+    <div class="filters">
+      <input type="text" id="name-filter" placeholder="Filtrar pelo nome">
+      <input type="text" id="type-filter" placeholder="Filtrar pelo tipo">
+      <input type="text" id="brand-filter" placeholder="Filtrar pela marca">
+      <select class="sort-filter">
+        <option value="all">Todos os produtos</option>
+        <option value="best-rated">Melhor Avaliados</option>
+        <option value="lower-prices">Menores Preços</option>
+        <option value="higher-prices">Maiores Preços</option>
+      </select>
+    </div>
+    <div class="load">
+      <div class="loader" class="display"></div>
+    </div>
+    <div id="products" class="product-container"></div>
+    <div class="pagination">
+      <button id="prev-btn">Back</button>
+      <button id="next-btn">Next</button>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6699; 
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #404346;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.product-card h2 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.price-badge {
+  background-color: #ff6699;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h2, .product-card p {
+  margin: 10px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ff6699;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: ease-in 0.1s;
+}
+
+.pagination button:hover {
+  opacity: 0.8;
+  transition: ease-in 0.1s;
+}
+
+.pagination button:disabled {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.filters input,
+.sort-filter {
+  padding: 10px;
+  font-size: 1rem;
+  width: 20%;
+  cursor: pointer;
+}
+
+.filters input:focus,
+.sort-filter:focus {
+  outline: 1px solid #ff6699;
+}
+
+.loader {
+  border: 5px solid #404346;
+  border-radius: 50%;
+  border-top: 5px solid #f4f4f4;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  visibility: hidden;
+  margin: 20px auto;
+  
+}
+
+.loader.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
