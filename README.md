@@ -37,7 +37,7 @@ Esse projeto foi construido usando as seguintes tecnologias:
 1. Clone este repositório
 
 ```sh
-git clone https://github.com/Biademery/BeautyLookUp.git
+git clone https://github.com/Biademery/beauty-look-up.git
 ```
 
 2. Abra o arquivo ` index.html `.
